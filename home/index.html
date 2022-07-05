@@ -235,14 +235,21 @@ function getParams() {
     })
 }(); </script>
 
-<!-- GTM Container placement set to footer -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQS6KXK"
-height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --><noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=340605110916898&ev=PageView&noscript=1&eid=340605110916898c5ae2fb2-55cb-4165-aecc-da15e4b3a000&cd%5Bpage_title%5D=Treino+de+4+Exerc%C3%ADcios+%5BFB%5D&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=621&cd%5Bplugin%5D=PixelYourSite&cd%5Bevent_url%5D=corpoestetico.com.br%2Ffb%2F&cd%5Buser_role%5D=guest" alt="facebook_pixel"></noscript>
-<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=1325889604604912&ev=PageView&noscript=1&eid=1325889604604912c5ae2fb2-55cb-4165-aecc-da15e4b3a000&cd%5Bpage_title%5D=Treino+de+4+Exerc%C3%ADcios+%5BFB%5D&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=621&cd%5Bplugin%5D=PixelYourSite&cd%5Bevent_url%5D=corpoestetico.com.br%2Ffb%2F&cd%5Buser_role%5D=guest" alt="facebook_pixel"></noscript>
-<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=449600149883927&ev=PageView&noscript=1&eid=449600149883927c5ae2fb2-55cb-4165-aecc-da15e4b3a000&cd%5Bpage_title%5D=Treino+de+4+Exerc%C3%ADcios+%5BFB%5D&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=621&cd%5Bplugin%5D=PixelYourSite&cd%5Bevent_url%5D=corpoestetico.com.br%2Ffb%2F&cd%5Buser_role%5D=guest" alt="facebook_pixel"></noscript>
-
+<!-- Facebook Pixel Code --> <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '347559140875739');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent');
+</script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=347559140875739&amp;ev=PageView&amp;noscript=1"></noscript> <!-- End Facebook Pixel Code -->
+	
+	
 <script type='text/javascript' id='rocket-browser-checker-js-after'>
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 </script>
